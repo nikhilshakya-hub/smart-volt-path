@@ -5,9 +5,9 @@ import { NotificationDropdown } from "./NotificationDropdown";
 
 interface HeaderProps {
   title: string;
-  subtitle?: string;
+  subtitle?: string | undefined;
   onMenuClick: () => void;
-  actions?: ReactNode;
+  actions?: ReactNode | undefined;
 }
 
 /** Page header with title, location chip, notifications and avatar. */
